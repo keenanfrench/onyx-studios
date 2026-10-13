@@ -4,7 +4,7 @@
 import { writeFileSync, mkdirSync } from 'node:fs';
 
 const BRAND = 'Onyx Studios';
-const SITE = 'https://keenanfrench.github.io/onyx-studios/';
+const SITE = 'https://onyxstudios.com.au/';
 const EMAIL = 'keenanfrench13@gmail.com';
 
 const PLANS = [
@@ -33,7 +33,7 @@ const PROJECTS = [
   },
   {
     slug: 'fluff-co', name: 'Fluff & Co.', kind: 'Mobile dog grooming', tag: 'Concept', year: '2026', plan: 'Business',
-    url: 'https://keenanfrench.github.io/onyx-studios/demos/fluff-co/', host: 'onyx-studios/demos/fluff-co',
+    url: 'https://onyxstudios.com.au/demos/fluff-co/', host: 'onyxstudios.com.au/demos/fluff-co',
     summary: 'A warm, playful site for a mobile dog groomer, with prices by dog size and a booking flow built around the van’s weekly route.',
     brief: 'The busiest groomers in Melbourne still hide their prices, bury surcharges in sliders and never say which suburbs they cover. Owners of nervous or elderly dogs want to know three things fast: what it costs for their dog, whether the van comes to them, and when.',
     approach: 'Cream, coral and plum with a rounded, friendly typeface, so it feels like a pet brand rather than a trade. Every price is printed and changes with one tap between small, medium and large. The van works one area a day, so the site turns that into a feature: “same street, same day”, a suburb checker and a booking flow that only offers real days on the route.',
@@ -47,7 +47,7 @@ const PROJECTS = [
   },
   {
     slug: 'tidewell', name: 'Tidewell Carpet Care', kind: 'Carpet & upholstery cleaning', tag: 'Concept', year: '2026', plan: 'Launch',
-    url: 'https://keenanfrench.github.io/onyx-studios/demos/tidewell/', host: 'onyx-studios/demos/tidewell',
+    url: 'https://onyxstudios.com.au/demos/tidewell/', host: 'onyxstudios.com.au/demos/tidewell',
     summary: 'A one-page site for a carpet cleaner that shows the result before you scroll and the exact price before you call.',
     brief: 'Carpet cleaning is bought on two questions: will it actually look better, and what will it really cost? The top local operators answer neither. Their sites have no prices, guarantees worded three different ways, and long quote forms before you see a number.',
     approach: 'Navy and aqua for clean water and trust, with a bold grotesque headline. The hero is a draggable before and after, so the result is the first thing you see. Below it, prices are on the page: three packages and a build-your-own calculator, plus one clearly worded bond-back guarantee for renters.',
