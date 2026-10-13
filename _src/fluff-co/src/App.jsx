@@ -933,7 +933,7 @@ function Footer() {
       </div>
       <div className="mx-auto mt-12 max-w-6xl border-t border-white/10 pt-6 text-center text-xs text-white/45">
         © {new Date().getFullYear()} Fluff &amp; Co. Mobile Dog Grooming.<br />
-        Portfolio concept: a fictional business. Website design &amp; build by <a href="../../index.html" className="text-white/70 underline">Keenan French</a>.
+        Portfolio concept: a fictional business. Website design &amp; build by <a href="../../index.html" className="text-white/70 underline">Onyx Studios</a>.
       </div>
     </footer>
   )

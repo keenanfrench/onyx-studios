@@ -1,4 +1,4 @@
-// Project X — shared page behaviour
+// Onyx Studios — shared page behaviour
 (function () {
   const header = document.querySelector('.site-header');
   const onScroll = () => header && header.classList.toggle('scrolled', window.scrollY > 10);

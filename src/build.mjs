@@ -1,10 +1,10 @@
-// Builds Project X: index.html, work/<slug>.html, terms.html
+// Builds Onyx Studios: index.html, work/<slug>.html, terms.html
 // Run from the repo root:  node src/build.mjs
 // Brand, prices and projects all live in this file. Edit here, rebuild, commit, push.
 import { writeFileSync, mkdirSync } from 'node:fs';
 
-const BRAND = 'Project X';
-const SITE = 'https://keenanfrench.github.io/project-x-site/';
+const BRAND = 'Onyx Studios';
+const SITE = 'https://keenanfrench.github.io/onyx-studios/';
 const EMAIL = 'keenanfrench13@gmail.com';
 
 const PLANS = [
@@ -33,7 +33,7 @@ const PROJECTS = [
   },
   {
     slug: 'fluff-co', name: 'Fluff & Co.', kind: 'Mobile dog grooming', tag: 'Concept', year: '2026', plan: 'Business',
-    url: 'https://keenanfrench.github.io/project-x-site/demos/fluff-co/', host: 'project-x-site/demos/fluff-co',
+    url: 'https://keenanfrench.github.io/onyx-studios/demos/fluff-co/', host: 'onyx-studios/demos/fluff-co',
     summary: 'A warm, playful site for a mobile dog groomer, with prices by dog size and a booking flow built around the van’s weekly route.',
     brief: 'The busiest groomers in Melbourne still hide their prices, bury surcharges in sliders and never say which suburbs they cover. Owners of nervous or elderly dogs want to know three things fast: what it costs for their dog, whether the van comes to them, and when.',
     approach: 'Cream, coral and plum with a rounded, friendly typeface, so it feels like a pet brand rather than a trade. Every price is printed and changes with one tap between small, medium and large. The van works one area a day, so the site turns that into a feature: “same street, same day”, a suburb checker and a booking flow that only offers real days on the route.',
@@ -47,7 +47,7 @@ const PROJECTS = [
   },
   {
     slug: 'tidewell', name: 'Tidewell Carpet Care', kind: 'Carpet & upholstery cleaning', tag: 'Concept', year: '2026', plan: 'Launch',
-    url: 'https://keenanfrench.github.io/project-x-site/demos/tidewell/', host: 'project-x-site/demos/tidewell',
+    url: 'https://keenanfrench.github.io/onyx-studios/demos/tidewell/', host: 'onyx-studios/demos/tidewell',
     summary: 'A one-page site for a carpet cleaner that shows the result before you scroll and the exact price before you call.',
     brief: 'Carpet cleaning is bought on two questions: will it actually look better, and what will it really cost? The top local operators answer neither. Their sites have no prices, guarantees worded three different ways, and long quote forms before you see a number.',
     approach: 'Navy and aqua for clean water and trust, with a bold grotesque headline. The hero is a draggable before and after, so the result is the first thing you see. Below it, prices are on the page: three packages and a build-your-own calculator, plus one clearly worded bond-back guarantee for renters.',
@@ -78,7 +78,7 @@ const PROJECTS = [
     summary: 'A cinematic launch site for a Melbourne production studio, wired into a live CRM that pings a phone the second an enquiry lands.',
     brief: 'A new photography and film studio needed to look established from day one and turn enquiries into booked shoots quickly, without any portfolio history to lean on.',
     approach: 'The whole identity is built around colour temperature: Tungsten orange, Daylight blue and Bone, the Kelvin scale every cinematographer works with. A custom aperture-iris animation sets the tone, and the process section scrolls like a production schedule.',
-    signature: 'The contact form feeds straight into a custom lead CRM. Every enquiry lands in a dashboard and buzzes the owner’s phone within seconds. This is the same system every Project X plan includes.',
+    signature: 'The contact form feeds straight into a custom lead CRM. Every enquiry lands in a dashboard and buzzes the owner’s phone within seconds. This is the same system every Onyx Studios plan includes.',
     built: ['React single-page app with legal pages', 'Custom aperture-iris animation', 'Scroll-driven process section', 'Contact form → CRM + instant phone alerts', 'Full brand identity system', 'Privacy & terms pages'],
     stack: 'React, Vite, Tailwind, GSAP',
     palette: [['Ink', '#121011'], ['Tungsten', '#E0913F'], ['Daylight', '#6F8798'], ['Bone', '#ECE6DC'], ['Ash', '#93897E']],
@@ -218,7 +218,7 @@ const faqs = [
 const home = page({
   path: 'index.html', root: '', nav: '',
   title: `${BRAND}: Websites for local businesses, built and looked after`,
-  desc: 'Project X designs, builds and looks after websites for local businesses, with a built-in lead CRM and instant phone alerts. Plans from $199/month.',
+  desc: 'Onyx Studios designs, builds and looks after websites for local businesses, with a built-in lead CRM and instant phone alerts. Plans from $199/month.',
   body: `
 <section class="hero">
   <div class="wrap">
@@ -415,7 +415,7 @@ PROJECTS.forEach((p, i) => {
 const terms = page({
   path: 'terms.html', root: '', nav: '',
   title: `Plan terms | ${BRAND}`,
-  desc: 'How Project X website plans work: setup fees, monthly plans, minimum term, ownership, buyout and cancellation.',
+  desc: 'How Onyx Studios website plans work: setup fees, monthly plans, minimum term, ownership, buyout and cancellation.',
   body: `
 <section class="cs-hero">
   <div class="wrap prose">
