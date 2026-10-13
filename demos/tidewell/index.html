@@ -1,0 +1,920 @@
+<!doctype html>
+<html lang="en-AU">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tidewell Carpet Care | Carpet steam cleaning, Melbourne's north &amp; west</title>
+<meta name="description" content="Truck-mounted carpet steam cleaning across Melbourne's north and west. Prices on the page, carpets dry in about two hours, and a bond-back guarantee for end of lease cleans.">
+<meta name="theme-color" content="#0B2540">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='9' fill='%230B2540'/%3E%3Cpath d='M16 6c-4 6-7 9.5-7 13a7 7 0 0 0 14 0c0-3.5-3-7-7-13z' fill='%2319B3C2'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+<link rel="stylesheet" href="https://unpkg.com/splitting@1.0.6/dist/splitting.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11.1.14/swiper-bundle.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,700&display=swap');
+
+:root{
+  --navy:#0B2540; --navy-2:#0A2038; --navy-3:#081A2E; --ink:#06131F;
+  --aqua:#19B3C2; --aqua-d:#118C99; --aqua-rgb:25,179,194;
+  --foam:#EEF8F9; --white:#fff; --text:#0B2540; --muted:#5B6B7A;
+  --sun:#FFC857; --line:rgba(11,37,64,.1);
+  --display:'Bricolage Grotesque',system-ui,sans-serif; --body:'DM Sans',system-ui,sans-serif;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:auto}
+body{margin:0;font-family:var(--body);font-size:17px;line-height:1.7;color:var(--text);background:var(--white);-webkit-font-smoothing:antialiased;overflow-x:hidden}
+img{max-width:100%;display:block}
+a{color:inherit}
+h1,h2,h3,h4{font-family:var(--display);margin:0;line-height:1.1;letter-spacing:-.01em}
+.wrap{width:min(1200px,100% - 40px);margin-inline:auto}
+.label{display:inline-flex;align-items:center;gap:12px;font-size:13px;font-weight:700;letter-spacing:.15em;text-transform:uppercase;color:var(--aqua)}
+.label::before{content:'';width:28px;height:2px;background:var(--aqua)}
+.dots{background-image:radial-gradient(rgba(255,255,255,.045) 1px,transparent 1px);background-size:28px 28px}
+.sec{padding:100px 0;position:relative}
+.sec-head{max-width:640px;margin-bottom:56px}
+.sec-head h2{font-size:52px;margin:18px 0 14px}
+.sec-head p{color:var(--muted);font-size:18px;margin:0}
+.dark{color:#fff}
+.dark .sec-head p{color:rgba(255,255,255,.68)}
+.center{text-align:center;margin-inline:auto}
+.center .label{justify-content:center}
+
+/* buttons */
+.btn{position:relative;display:inline-flex;align-items:center;gap:10px;font:700 16px var(--body);padding:15px 28px;border-radius:8px;border:2px solid transparent;cursor:pointer;text-decoration:none;overflow:hidden;isolation:isolate;transition:color .3s,border-color .3s,transform .2s}
+.btn::before{content:'';position:absolute;inset:0;z-index:-1;transform:scaleX(0);transform-origin:left;transition:transform .35s ease}
+.btn:hover::before{transform:scaleX(1)}
+.btn:active{transform:translateY(1px)}
+.btn-aqua{background:var(--aqua);color:var(--ink)}
+.btn-aqua::before{background:#fff}
+.btn-ghost{border-color:rgba(255,255,255,.55);color:#fff}
+.btn-ghost::before{background:#fff}
+.btn-ghost:hover{color:var(--navy)}
+.btn-navy{background:var(--navy);color:#fff}
+.btn-navy::before{background:var(--aqua)}
+.btn-navy:hover{color:var(--ink)}
+.btn:focus-visible,a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible{outline:3px solid var(--sun);outline-offset:3px}
+
+/* progress + nav */
+#scroll-progress{position:fixed;top:0;left:0;height:3px;width:0;background:linear-gradient(90deg,var(--aqua),var(--sun));z-index:1100}
+.nav{position:fixed;inset:0 0 auto;z-index:1000;height:80px;display:flex;align-items:center;transition:height .3s,background .3s,box-shadow .3s,backdrop-filter .3s}
+.nav.solid{height:64px;background:rgba(11,37,64,.92);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);box-shadow:0 2px 24px rgba(0,0,0,.18)}
+.nav .wrap{display:flex;align-items:center;justify-content:space-between;gap:20px}
+.brand{display:flex;align-items:center;gap:10px;font:800 22px var(--display);color:#fff;text-decoration:none;letter-spacing:-.02em}
+.brand small{font:500 12px var(--body);letter-spacing:.14em;text-transform:uppercase;color:rgba(255,255,255,.6);margin-left:2px}
+.pulse-dot{width:8px;height:8px;border-radius:50%;background:var(--aqua);animation:dotPulse 3s ease-in-out infinite}
+@keyframes dotPulse{0%,100%{box-shadow:0 0 0 0 rgba(var(--aqua-rgb),.6);transform:scale(1)}50%{box-shadow:0 0 0 7px rgba(var(--aqua-rgb),0);transform:scale(1.15)}}
+.nav-links{display:flex;align-items:center;gap:28px}
+.nav-links a{position:relative;color:rgba(255,255,255,.85);text-decoration:none;font-size:15px;font-weight:500}
+.nav-links a:not(.btn)::after{content:'';position:absolute;left:0;bottom:-4px;height:2px;width:100%;background:var(--aqua);transform:scaleX(0);transform-origin:right;transition:transform .3s}
+.nav-links a:not(.btn):hover::after{transform:scaleX(1);transform-origin:left}
+.nav-phone{font-weight:700!important;color:#fff!important;animation:phonePulse 6s ease-in-out infinite}
+@keyframes phonePulse{0%,90%,100%{opacity:1;transform:scale(1)}95%{opacity:.7;transform:scale(1.02)}}
+.nav-links .btn{padding:10px 18px;font-size:14px}
+.burger{display:none;width:44px;height:44px;background:none;border:0;cursor:pointer;position:relative;z-index:1002}
+.burger span{position:absolute;left:10px;right:10px;height:2px;background:#fff;transition:transform .3s,opacity .3s}
+.burger span:nth-child(1){top:15px}.burger span:nth-child(2){top:21px}.burger span:nth-child(3){top:27px}
+.burger.open span:nth-child(1){transform:translateY(6px) rotate(45deg)}
+.burger.open span:nth-child(2){opacity:0}
+.burger.open span:nth-child(3){transform:translateY(-6px) rotate(-45deg)}
+
+/* hero */
+#hero{position:relative;min-height:100vh;display:flex;align-items:center;background:linear-gradient(160deg,#0D2C4C 0%,var(--navy) 45%,var(--ink) 100%);color:#fff;overflow:hidden;padding:120px 0 80px}
+#hero::before{content:'';position:absolute;inset:0;background:radial-gradient(60% 50% at 85% 30%,rgba(var(--aqua-rgb),.22),transparent 70%),radial-gradient(40% 40% at 10% 90%,rgba(var(--aqua-rgb),.12),transparent 70%);z-index:0}
+#particles{position:absolute;inset:0;z-index:1;pointer-events:none}
+.hero-inner{position:relative;z-index:2;display:grid;grid-template-columns:1.05fr .95fr;gap:56px;align-items:center}
+.hero-headline{font-size:72px;font-weight:800;line-height:1.04;margin:20px 0 22px;letter-spacing:-.025em}
+.hero-headline em{font-style:normal;color:var(--aqua)}
+.hero-sub{font-size:20px;color:rgba(255,255,255,.85);max-width:30ch;margin:0 0 34px;line-height:1.6}
+.hero-ctas{display:flex;gap:14px;flex-wrap:wrap}
+.hero-trust{margin-top:30px;font-size:13px;color:rgba(255,255,255,.68);display:flex;flex-wrap:wrap;gap:6px 14px;align-items:center}
+.hero-trust .stars{color:var(--sun);letter-spacing:2px;font-size:15px}
+.hero-trust i.sep{width:4px;height:4px;border-radius:50%;background:rgba(255,255,255,.35)}
+
+/* before/after */
+.ba-wrap{position:relative;animation:heroFloat 8s ease-in-out infinite}
+@keyframes heroFloat{0%,100%{transform:translateY(0) translateX(0)}33%{transform:translateY(-10px) translateX(3px)}66%{transform:translateY(-6px) translateX(-3px)}}
+.ba{--pos:50%;position:relative;aspect-ratio:4/4.4;border-radius:22px;overflow:hidden;box-shadow:0 40px 80px -20px rgba(0,0,0,.6),0 0 0 1px rgba(255,255,255,.08);background:linear-gradient(135deg,var(--navy),var(--aqua));user-select:none;touch-action:pan-y;cursor:ew-resize}
+.ba img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;pointer-events:none}
+.ba .before{position:absolute;inset:0;clip-path:inset(0 calc(100% - var(--pos)) 0 0)}
+.ba .before img{filter:sepia(.55) saturate(.55) brightness(.8) contrast(.92) hue-rotate(-8deg)}
+.ba .grime{position:absolute;inset:0;mix-blend-mode:multiply;pointer-events:none;background:
+  radial-gradient(9% 6% at 32% 80%,rgba(92,62,30,.55),transparent 70%),
+  radial-gradient(6% 4% at 58% 88%,rgba(80,52,24,.5),transparent 70%),
+  radial-gradient(12% 5% at 22% 92%,rgba(110,80,45,.45),transparent 75%),
+  radial-gradient(5% 3.5% at 70% 76%,rgba(90,60,30,.45),transparent 70%),
+  radial-gradient(40% 18% at 45% 90%,rgba(120,95,60,.35),transparent 80%),
+  linear-gradient(180deg,transparent 55%,rgba(100,80,50,.28))}
+.ba .tag{position:absolute;top:18px;font:700 11px var(--body);letter-spacing:.16em;text-transform:uppercase;padding:6px 12px;border-radius:100px;background:rgba(6,19,31,.72);backdrop-filter:blur(6px);color:#fff;z-index:3}
+.ba .tag.b{left:18px}.ba .tag.a{right:18px;top:auto;bottom:18px;background:var(--aqua);color:var(--ink)}
+.ba .handle{position:absolute;top:0;bottom:0;left:var(--pos);width:2px;background:#fff;transform:translateX(-1px);z-index:4;box-shadow:0 0 18px rgba(0,0,0,.35)}
+.ba .knob{position:absolute;top:50%;left:50%;width:54px;height:54px;border-radius:50%;background:#fff;color:var(--navy);display:grid;place-items:center;transform:translate(-50%,-50%);box-shadow:0 8px 24px rgba(0,0,0,.35);font-size:15px}
+.ba input{position:absolute;inset:0;width:100%;height:100%;opacity:0;cursor:ew-resize;z-index:5;margin:0}
+.ba-hint{display:flex;align-items:center;gap:8px;justify-content:center;margin-top:16px;font-size:13px;color:rgba(255,255,255,.6)}
+.hero-cert-badge{position:absolute;top:-14px;right:-14px;z-index:6;background:rgba(6,19,31,.85);border:1px solid var(--aqua);color:#fff;font-weight:700;font-size:13px;padding:9px 16px;border-radius:100px;animation:badgePulse 3s ease-in-out infinite;white-space:nowrap}
+.hero-cert-badge b{color:var(--sun)}
+@keyframes badgePulse{0%,100%{box-shadow:0 0 0 0 rgba(var(--aqua-rgb),.4)}50%{box-shadow:0 0 0 8px rgba(var(--aqua-rgb),0)}}
+.hero-stat{position:absolute;bottom:56px;left:-28px;z-index:6;background:rgba(6,19,31,.62);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);border-left:3px solid var(--aqua);padding:14px 18px;border-radius:8px}
+.hero-stat b{display:block;font:800 28px var(--display);line-height:1}
+.hero-stat span{font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:rgba(255,255,255,.7)}
+
+/* trust bar */
+.trust{background:var(--foam);padding:80px 0}
+.trust-row{display:grid;grid-template-columns:repeat(5,1fr)}
+.stat{text-align:center;padding:0 16px;position:relative}
+.stat+.stat::before{content:'';position:absolute;left:0;top:10%;bottom:10%;width:1px;background:rgba(0,0,0,.1)}
+.stat i{font-size:28px;color:var(--aqua)}
+.stat .num{font:800 56px var(--display);color:var(--navy);line-height:1.1;margin:10px 0 4px;letter-spacing:-.02em}
+.stat .lbl{font-size:13px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);font-weight:500}
+
+/* services */
+#services{background:linear-gradient(135deg,var(--navy-2),var(--navy));}
+.svc-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:20px}
+.svc{position:relative;background:rgba(255,255,255,.05);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border:1px solid rgba(255,255,255,.1);border-radius:16px;padding:30px;color:#fff;transition:transform .35s,box-shadow .35s;overflow:hidden;transform-style:preserve-3d}
+.svc:hover{transform:translateY(-8px);box-shadow:0 24px 48px -16px rgba(0,0,0,.5)}
+.svc::after{content:'';position:absolute;left:0;bottom:0;height:3px;width:0;background:var(--aqua);transition:width .35s ease}
+.svc:hover::after{width:100%}
+.svc.featured{grid-row:span 2;background:rgba(var(--aqua-rgb),.15);border-color:rgba(var(--aqua-rgb),.4);display:flex;flex-direction:column}
+.svc.featured .svc-img{margin:22px -30px -30px;flex:1;min-height:220px;max-height:300px;overflow:hidden;background:linear-gradient(135deg,var(--navy),var(--aqua)) center/cover}
+.svc.featured .svc-img img{width:100%;height:100%;object-fit:cover}
+.svc .pop{position:absolute;top:22px;right:22px;background:var(--aqua);color:var(--ink);font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;padding:4px 10px;border-radius:100px}
+.ico{width:56px;height:56px;border-radius:12px;background:rgba(var(--aqua-rgb),.12);border:1px solid rgba(var(--aqua-rgb),.3);display:grid;place-items:center;color:var(--aqua);font-size:24px;transition:transform .3s}
+.svc:hover .ico{transform:scale(1.08)}
+.svc h3{font-size:22px;margin:20px 0 8px}
+.svc p{font-size:15px;color:rgba(255,255,255,.68);line-height:1.6;margin:0 0 14px}
+.svc .from{font-size:14px;color:var(--aqua);font-weight:700;text-decoration:none}
+
+/* prices */
+#prices{background:#fff}
+.pkg-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-bottom:60px}
+.pkg{border:1px solid var(--line);border-radius:18px;padding:30px;position:relative;background:#fff;transition:transform .3s,box-shadow .3s}
+.pkg:hover{transform:translateY(-4px);box-shadow:0 20px 40px -18px rgba(11,37,64,.25)}
+.pkg.hot{background:var(--navy);color:#fff;border-color:var(--navy)}
+.pkg.hot .pop{position:absolute;top:-12px;left:30px;background:var(--aqua);color:var(--ink);font-size:11px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;padding:5px 12px;border-radius:100px}
+.pkg h3{font-size:22px}
+.pkg .who{font-size:15px;color:var(--muted);margin:6px 0 18px}
+.pkg.hot .who{color:rgba(255,255,255,.65)}
+.pkg .price{font:800 52px var(--display);letter-spacing:-.03em;line-height:1}
+.pkg .price small{font:500 15px var(--body);color:var(--muted);letter-spacing:0;margin-left:4px}
+.pkg.hot .price small{color:rgba(255,255,255,.6)}
+.pkg ul{list-style:none;padding:0;margin:22px 0 26px;font-size:15px}
+.pkg li{display:flex;gap:10px;padding:5px 0}
+.pkg li i{color:var(--aqua);margin-top:6px;font-size:12px}
+.pkg .btn{width:100%;justify-content:center}
+
+.calc{display:grid;grid-template-columns:1.25fr .75fr;border-radius:22px;overflow:hidden;border:1px solid var(--line);box-shadow:0 30px 60px -30px rgba(11,37,64,.25)}
+.calc-in{padding:40px;background:var(--foam)}
+.calc-in h3{font-size:30px;margin-bottom:6px}
+.calc-in>p{color:var(--muted);margin:0 0 26px;font-size:16px}
+.presets{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:24px}
+.presets button{font:500 14px var(--body);border:1px solid rgba(11,37,64,.18);background:#fff;color:var(--navy);padding:8px 14px;border-radius:100px;cursor:pointer;transition:background .2s,color .2s,border-color .2s}
+.presets button:hover,.presets button.on{background:var(--navy);color:#fff;border-color:var(--navy)}
+.rows{display:grid;grid-template-columns:1fr 1fr;gap:10px 24px}
+.row{display:flex;align-items:center;justify-content:space-between;gap:12px;background:#fff;border-radius:12px;padding:12px 14px;border:1px solid var(--line)}
+.row b{display:block;font-size:15px;line-height:1.3}
+.row small{color:var(--muted);font-size:13px}
+.step{display:flex;align-items:center;gap:6px}
+.step button{width:32px;height:32px;border-radius:50%;border:1px solid rgba(11,37,64,.2);background:#fff;color:var(--navy);font-size:16px;cursor:pointer;display:grid;place-items:center;transition:background .2s,color .2s}
+.step button:hover{background:var(--aqua);border-color:var(--aqua);color:var(--ink)}
+.step output{min-width:22px;text-align:center;font-weight:700}
+.extras{display:flex;flex-wrap:wrap;gap:10px 22px;margin-top:20px}
+.check{display:flex;align-items:center;gap:10px;font-size:15px;cursor:pointer}
+.check input{width:20px;height:20px;accent-color:var(--aqua)}
+.calc-out{background:var(--navy);color:#fff;padding:40px;display:flex;flex-direction:column;justify-content:center;position:relative;overflow:hidden}
+.calc-out::before{content:'';position:absolute;width:320px;height:320px;border-radius:50%;background:radial-gradient(circle,rgba(var(--aqua-rgb),.35),transparent 70%);top:-120px;right:-120px}
+.calc-out .lbl{font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:rgba(255,255,255,.6)}
+.calc-out .total{font:800 76px var(--display);letter-spacing:-.04em;line-height:1;margin:10px 0 6px}
+.calc-out .note{font-size:14px;color:rgba(255,255,255,.65);min-height:44px;margin:0 0 24px}
+.calc-out ul{list-style:none;padding:0;margin:0 0 26px;font-size:14px;color:rgba(255,255,255,.8)}
+.calc-out li{display:flex;justify-content:space-between;border-bottom:1px dashed rgba(255,255,255,.14);padding:6px 0}
+.calc-out .btn{justify-content:center}
+.calc-out .fine{font-size:12px;color:rgba(255,255,255,.5);margin:14px 0 0}
+
+/* process */
+#process{background:var(--foam)}
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:40px}
+.p-step{text-align:center;position:relative;padding:0 10px}
+.p-step:not(:last-child)::after{content:'';position:absolute;top:32px;left:calc(50% + 50px);width:calc(100% - 60px);border-top:1px dashed var(--aqua);opacity:.6}
+.p-step .n{font:800 64px var(--display);color:var(--aqua);line-height:1}
+.p-step h3{font-size:20px;margin:18px 0 10px}
+.p-step p{font-size:15px;color:var(--muted);margin:0}
+.p-step .time{display:inline-block;margin-top:14px;font-size:12px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--aqua-d);background:rgba(var(--aqua-rgb),.12);padding:4px 10px;border-radius:100px}
+
+/* bond back */
+#bond{background:var(--navy-3)}
+.bond{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center}
+.bond-img{position:relative;border-radius:18px;overflow:hidden;aspect-ratio:4/3.4;background:linear-gradient(135deg,var(--navy),var(--aqua))}
+.bond-img img{width:100%;height:100%;object-fit:cover}
+.receipt{position:absolute;right:20px;bottom:20px;width:230px;background:#fff;color:var(--navy);border-radius:10px;padding:16px 18px;font-size:13px;box-shadow:0 20px 40px rgba(0,0,0,.35);transform:rotate(2deg)}
+.receipt b{font-family:var(--display);font-size:15px;display:block;margin-bottom:6px}
+.receipt div{display:flex;justify-content:space-between;border-bottom:1px dashed var(--line);padding:4px 0}
+.receipt .ok{color:var(--aqua-d);font-weight:700}
+.bond h2{font-size:46px;margin:18px 0 18px}
+.bond .lead{font-size:19px;color:rgba(255,255,255,.85);margin:0 0 26px}
+.ticks{list-style:none;padding:0;margin:0 0 30px}
+.ticks li{display:flex;gap:14px;align-items:flex-start;padding:8px 0;color:rgba(255,255,255,.88)}
+.tick{flex:0 0 26px;height:26px;border-radius:50%;background:rgba(var(--aqua-rgb),.15);border:1px solid rgba(var(--aqua-rgb),.4);display:grid;place-items:center;color:var(--aqua);font-size:12px;margin-top:2px}
+.promise{border:1px solid rgba(var(--aqua-rgb),.4);background:rgba(var(--aqua-rgb),.08);border-radius:14px;padding:18px 20px;font-size:15px;color:rgba(255,255,255,.85);margin-bottom:28px}
+.promise b{color:#fff}
+
+/* gallery */
+#gallery{background:#060D18}
+.gal{display:grid;grid-template-columns:1.4fr 1fr 1fr;grid-template-rows:280px 280px;gap:16px}
+.gi{position:relative;overflow:hidden;border-radius:10px;background:linear-gradient(135deg,var(--navy),var(--aqua))}
+.gi:nth-child(1){grid-row:1/span 2}
+.gi:nth-child(4){grid-column:2/span 2}
+.gi img{width:100%;height:100%;object-fit:cover;transition:transform .6s ease}
+.gi:hover img{transform:scale(1.05)}
+.gi::after{content:'';position:absolute;inset:0;background:linear-gradient(to top,rgba(0,0,0,.85) 0%,transparent 60%);opacity:.0;transition:opacity .4s}
+.gi:hover::after,.gi:focus-within::after{opacity:1}
+.gi figcaption{position:absolute;left:20px;bottom:18px;right:20px;z-index:2;color:#fff;opacity:0;transform:translateY(8px);transition:opacity .4s,transform .4s}
+.gi:hover figcaption{opacity:1;transform:none}
+.gi figcaption span{display:block;font-size:10px;letter-spacing:.15em;text-transform:uppercase;color:var(--aqua);font-weight:700}
+.gi figcaption b{font-size:15px}
+
+/* why */
+#why{background:#081120}
+.why{display:grid;grid-template-columns:48% 48%;gap:4%;align-items:center}
+.why-img{position:relative}
+.why-img .ph{border-radius:16px;overflow:hidden;aspect-ratio:4/4.6;background:linear-gradient(135deg,var(--navy),var(--aqua))}
+.why-img img{width:100%;height:100%;object-fit:cover}
+.g-badge{position:absolute;top:-32px;right:-32px;width:120px;height:120px;border-radius:50%;background:#fff;color:var(--navy);display:grid;place-items:center;text-align:center;box-shadow:0 14px 34px rgba(0,0,0,.35)}
+.g-badge svg{position:absolute;inset:0;animation:rotateBadge 30s linear infinite}
+.g-badge b{font:800 26px var(--display);line-height:1;display:block}
+.g-badge b i{color:var(--sun);font-size:16px}
+.g-badge small{font-size:10px;letter-spacing:.12em;font-weight:700;color:var(--muted)}
+@keyframes rotateBadge{to{transform:rotate(360deg)}}
+.why h2{font-size:46px;line-height:1.15;margin:18px 0 18px}
+.why .bigline{font:700 20px var(--display);color:var(--aqua);margin:0 0 24px}
+
+/* testimonials */
+#reviews{background:#0A1628;overflow:hidden}
+.t-card{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.08);border-radius:16px;padding:32px;color:#fff;height:auto;display:flex;flex-direction:column}
+.t-card .stars{color:var(--sun);font-size:20px;letter-spacing:2px}
+.t-card q{display:block;font-size:16px;line-height:1.75;color:rgba(255,255,255,.85);font-style:italic;margin:16px 0 0;quotes:none;flex:1}
+.t-card hr{border:0;border-top:1px solid rgba(255,255,255,.12);margin:20px 0}
+.t-card b{font-size:15px;display:block}
+.t-card small{font-size:12px;color:rgba(255,255,255,.55)}
+.swiper-slide{height:auto}
+
+/* faq */
+#faq{background:#fff}
+.faq{display:grid;grid-template-columns:.8fr 1.2fr;gap:60px}
+.faq details{border-bottom:1px solid var(--line);padding:20px 0}
+.faq summary{list-style:none;cursor:pointer;font:700 19px var(--display);display:flex;justify-content:space-between;gap:20px;align-items:center}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:'+';font:400 28px var(--body);color:var(--aqua);transition:transform .3s;line-height:1}
+.faq details[open] summary::after{transform:rotate(45deg)}
+.faq details p{margin:12px 0 0;color:var(--muted);font-size:16px;max-width:62ch}
+
+/* cta */
+#cta{background:linear-gradient(135deg,#F3FAFB,#E2F3F5);overflow:hidden;text-align:center}
+.ghost{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);font:800 300px var(--display);line-height:1;color:rgba(0,0,0,.055);pointer-events:none;user-select:none;white-space:nowrap;z-index:0;letter-spacing:-.04em}
+#cta .wrap{position:relative;z-index:1}
+#cta h2{font-size:52px;max-width:700px;margin:18px auto 16px}
+#cta p{font-size:20px;color:var(--muted);margin:0 0 20px}
+.big-phone{display:inline-block;font:800 44px var(--display);color:var(--aqua-d);text-decoration:none;margin:4px 0 26px;letter-spacing:-.02em}
+#cta .reassure{font-size:13px;color:var(--muted);margin-top:22px}
+
+/* contact */
+#contact{background:#fff;padding:80px 0}
+.contact{display:grid;grid-template-columns:.9fr 1.1fr;gap:64px}
+.contact h2{font-size:48px;margin-bottom:24px}
+.contact h3{font-size:28px;margin-bottom:8px}
+.contact .area{color:var(--muted);margin:0 0 26px}
+.c-line{display:flex;align-items:center;gap:14px;margin:12px 0;font-size:17px;text-decoration:none}
+.c-line i{width:42px;height:42px;border-radius:10px;background:rgba(var(--aqua-rgb),.12);color:var(--aqua-d);display:grid;place-items:center}
+.c-line.phone{font:800 26px var(--display);color:var(--aqua-d)}
+.subs{margin-top:28px;font-size:14px;color:var(--muted)}
+.subs ul{columns:2;padding-left:18px;margin:8px 0 0}
+form.qf{border:1px solid var(--line);border-radius:18px;padding:34px;background:var(--foam);display:grid;gap:16px}
+.qf label{display:block;font-size:14px;font-weight:700;margin-bottom:6px}
+.qf input,.qf select,.qf textarea{width:100%;font:16px var(--body);color:var(--text);padding:14px;border:1px solid rgba(11,37,64,.18);border-radius:8px;background:#fff;transition:border-color .2s,box-shadow .2s}
+.qf input:focus,.qf select:focus,.qf textarea:focus{outline:none;border-color:var(--aqua);box-shadow:0 0 0 3px rgba(var(--aqua-rgb),.15)}
+.qf textarea{min-height:110px;resize:vertical}
+.qf .two{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.qf .btn{width:100%;justify-content:center;font-size:16px}
+.qf .err{color:#B42318;font-size:14px;margin:0;min-height:0}
+.sent{text-align:center;padding:40px 10px}
+.sent i{font-size:40px;color:var(--aqua)}
+.sent p{font-size:24px;font-weight:700;color:var(--navy);margin:14px 0 6px;font-family:var(--display)}
+.sent small{color:var(--muted);font-size:15px}
+
+/* footer */
+footer{background:var(--navy);color:#fff;border-top:3px solid var(--aqua);padding:64px 0 0}
+.f-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:40px;padding-bottom:44px}
+.f-grid .brand{margin-bottom:12px}
+.f-grid p{font-size:14px;color:rgba(255,255,255,.6);margin:0 0 18px;max-width:30ch}
+.f-grid h4{font:700 13px var(--body);letter-spacing:.1em;text-transform:uppercase;color:var(--aqua);margin-bottom:14px}
+.f-grid ul{list-style:none;padding:0;margin:0;font-size:14px}
+.f-grid li{margin:8px 0;color:rgba(255,255,255,.75)}
+.f-grid a{text-decoration:none;color:rgba(255,255,255,.75);transition:color .2s}
+.f-grid a:hover{color:#fff}
+.social{display:flex;gap:16px;font-size:20px}
+.social a:hover{color:var(--aqua)}
+.f-bottom{border-top:1px solid rgba(255,255,255,.08);padding:22px 0;font-size:13px;color:rgba(255,255,255,.45);text-align:center}
+.f-bottom a{color:rgba(255,255,255,.7)}
+
+/* fixed call */
+.call-fab{position:fixed;right:20px;bottom:20px;z-index:9999;width:58px;height:58px;border-radius:50%;background:var(--aqua);color:var(--ink);display:grid;place-items:center;font-size:22px;text-decoration:none;box-shadow:0 4px 20px rgba(var(--aqua-rgb),.5);animation:fabPulse 2.5s ease infinite}
+@keyframes fabPulse{0%,100%{box-shadow:0 0 0 0 rgba(var(--aqua-rgb),.5)}50%{box-shadow:0 0 0 12px rgba(var(--aqua-rgb),0)}}
+.call-fab::before{content:'Call now';position:absolute;right:70px;top:50%;transform:translateY(-50%);background:var(--navy);color:#fff;font-size:13px;font-weight:700;padding:6px 10px;border-radius:6px;white-space:nowrap;opacity:0;pointer-events:none;transition:opacity .2s}
+.call-fab:hover::before{opacity:1}
+.m-bar{display:none}
+
+/* responsive */
+@media (max-width:1080px){
+  .hero-inner{grid-template-columns:1fr;gap:60px}
+  .hero-headline{font-size:58px}
+  .ba-wrap{max-width:560px;margin-inline:auto;width:100%}
+  .svc-grid{grid-template-columns:1fr 1fr}
+  .svc.featured{grid-row:auto;grid-column:span 2}
+  .calc{grid-template-columns:1fr}
+  .trust-row{grid-template-columns:repeat(3,1fr);row-gap:40px}
+  .stat:nth-child(4)::before{display:none}
+}
+@media (max-width:860px){
+  .nav-links{position:fixed;inset:0;background:var(--navy);flex-direction:column;justify-content:center;gap:26px;opacity:0;pointer-events:none;transition:opacity .3s}
+  .nav-links.open{opacity:1;pointer-events:auto}
+  .nav-links a{font:700 32px var(--display)}
+  .nav-links .nav-phone{font-size:22px!important}
+  .nav-links .btn{font-size:18px}
+  .burger{display:block}
+  .pkg-grid,.steps,.bond,.why,.faq,.contact{grid-template-columns:1fr}
+  .p-step::after{display:none}
+  .bond{gap:40px}.why{gap:60px}
+  .gal{grid-template-columns:1fr 1fr;grid-template-rows:240px 200px 200px}
+  .gi:nth-child(1){grid-row:auto;grid-column:span 2}
+  .gi:nth-child(4){grid-column:span 2}
+}
+@media (max-width:768px){
+  body{font-size:17px}
+  .sec{padding:76px 0}
+  .hero-headline{font-size:42px}
+  .hero-sub{font-size:18px}
+  #hero{padding:110px 0 60px;min-height:auto}
+  .hero-cert-badge{right:8px;top:-14px}
+  .hero-stat{left:10px;bottom:60px}
+  .sec-head h2,#cta h2{font-size:34px}
+  .bond h2,.why h2{font-size:30px}
+  .contact h2{font-size:36px}
+  .trust-row{grid-template-columns:1fr 1fr}
+  .stat:nth-child(5){grid-column:span 2}
+  .stat::before{display:none}
+  .stat .num{font-size:44px}
+  .svc-grid{grid-template-columns:1fr}
+  .svc.featured{grid-column:auto}
+  .rows{grid-template-columns:1fr}
+  .calc-in,.calc-out{padding:28px 22px}
+  .calc-out .total{font-size:60px}
+  .ghost{font-size:150px}
+  .big-phone{font-size:34px}
+  .qf .two{grid-template-columns:1fr}
+  form.qf{padding:24px}
+  .gal{grid-template-columns:1fr;grid-template-rows:none;grid-auto-rows:240px}
+  .gi:nth-child(n){grid-column:auto;grid-row:auto}
+  .gi::after,.gi figcaption{opacity:1;transform:none}
+  .g-badge{right:10px;top:-30px;width:100px;height:100px}
+  .f-grid{grid-template-columns:1fr 1fr}
+  .call-fab{display:none}
+  .m-bar{display:grid;grid-template-columns:1fr 1.4fr;gap:8px;position:fixed;left:0;right:0;bottom:0;z-index:9999;padding:10px 12px calc(10px + env(safe-area-inset-bottom));background:rgba(11,37,64,.96);backdrop-filter:blur(10px)}
+  .m-bar a{display:flex;align-items:center;justify-content:center;gap:8px;font-weight:700;font-size:15px;text-decoration:none;border-radius:8px;padding:13px}
+  .m-bar .c{border:1px solid rgba(255,255,255,.4);color:#fff}
+  .m-bar .q{background:var(--aqua);color:var(--ink)}
+  footer{padding-bottom:70px}
+}
+@media (max-width:480px){.f-grid{grid-template-columns:1fr}.ba{aspect-ratio:4/4.6}}
+@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}}
+</style>
+</head>
+<body>
+<div id="scroll-progress" aria-hidden="true"></div>
+
+<header class="nav" id="nav">
+  <div class="wrap">
+    <a class="brand" href="#hero" aria-label="Tidewell Carpet Care home"><span class="pulse-dot"></span>Tidewell <small>Carpet Care</small></a>
+    <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false" aria-controls="nav-links"><span></span><span></span><span></span></button>
+    <nav class="nav-links" id="nav-links" aria-label="Main">
+      <a href="#services">Services</a>
+      <a href="#prices">Prices</a>
+      <a href="#bond">Bond back</a>
+      <a href="#reviews">Reviews</a>
+      <a href="#faq">FAQ</a>
+      <a class="nav-phone" href="tel:0400000000"><i class="fa-solid fa-phone" style="font-size:13px;margin-right:6px"></i>0400 000 000</a>
+      <a class="btn btn-aqua" href="#prices">Instant price <i class="fa-solid fa-arrow-right"></i></a>
+    </nav>
+  </div>
+</header>
+
+<main>
+<!-- HERO -->
+<section id="hero" class="dots">
+  <div id="particles"></div>
+  <div class="wrap hero-inner">
+    <div>
+      <span class="label hero-label">Carpet steam cleaning · Melbourne's north &amp; west</span>
+      <h1 class="hero-headline" data-splitting="words">Carpets that look new, <em>dry in two hours.</em></h1>
+      <p class="hero-sub">Truck-mounted hot water extraction that lifts the grime a vacuum never reaches. Your price is on this page before you call.</p>
+      <div class="hero-ctas">
+        <a class="btn btn-aqua" href="#prices">Get my instant price <i class="fa-solid fa-arrow-right"></i></a>
+        <a class="btn btn-ghost" href="tel:0400000000"><i class="fa-solid fa-phone"></i> Call 0400 000 000</a>
+      </div>
+      <div class="hero-trust"><span class="stars">★★★★★</span><span>4.9 from 860 Google reviews</span><i class="sep"></i><span>24,000+ rooms cleaned</span><i class="sep"></i><span>Bond-back guarantee</span></div>
+    </div>
+    <div class="ba-wrap">
+      <div class="hero-cert-badge"><b>★</b> 4.9 on Google</div>
+      <div class="ba" id="ba">
+        <img src="https://images.unsplash.com/photo-1560448204-603b3fc33ddc?w=1100&q=80" alt="Living room with a freshly steam cleaned carpet" width="1100" height="1210">
+        <div class="before" aria-hidden="true">
+          <img src="https://images.unsplash.com/photo-1560448204-603b3fc33ddc?w=1100&q=80" alt="">
+          <div class="grime"></div>
+        </div>
+        <span class="tag b">Before</span><span class="tag a">After</span>
+        <div class="handle"><span class="knob"><i class="fa-solid fa-left-right"></i></span></div>
+        <input type="range" min="0" max="100" value="50" step="1" aria-label="Drag to compare the carpet before and after cleaning">
+      </div>
+      <div class="hero-stat"><b>2 hrs</b><span>Average dry time</span></div>
+      <p class="ba-hint"><i class="fa-regular fa-hand-pointer"></i> Drag the handle to compare</p>
+    </div>
+  </div>
+</section>
+
+<!-- TRUST -->
+<section class="trust" aria-label="Tidewell in numbers">
+  <div class="wrap trust-row">
+    <div class="stat"><i class="fa-solid fa-calendar-check"></i><div class="num"><span class="count" data-to="12">0</span></div><div class="lbl">Years in business</div></div>
+    <div class="stat"><i class="fa-solid fa-house-chimney"></i><div class="num"><span class="count" data-to="24">0</span>k+</div><div class="lbl">Rooms cleaned</div></div>
+    <div class="stat"><i class="fa-solid fa-wind"></i><div class="num"><span class="count" data-to="2">0</span> hr</div><div class="lbl">Average dry time</div></div>
+    <div class="stat"><i class="fa-solid fa-building-user"></i><div class="num"><span class="count" data-to="140">0</span>+</div><div class="lbl">Agents who refer us</div></div>
+    <div class="stat"><i class="fa-solid fa-star" style="color:var(--sun)"></i><div class="num"><span class="count" data-to="4.9" data-dec="1">0</span> ★</div><div class="lbl">Google rating</div></div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section id="services" class="sec dark dots">
+  <div class="wrap">
+    <div class="sec-head" data-aos="fade-up">
+      <span class="label">What we clean</span>
+      <h2>Every soft surface in your home.</h2>
+      <p>One van, one visit. We bring 90°C water and our own power, so all you need to do is open the door.</p>
+    </div>
+    <div class="svc-grid">
+      <article class="svc featured" data-tilt data-aos="fade-up">
+        <span class="pop">Most booked</span>
+        <div class="ico"><i class="fa-solid fa-house"></i></div>
+        <h3>Carpet steam cleaning</h3>
+        <p>Pre-spray, hot water extraction and a final groom, so the pile stands up and the colour comes back. Safe for wool and synthetic carpets.</p>
+        <a class="from" href="#prices">From $39 a room →</a>
+        <div class="svc-img"><img src="https://images.unsplash.com/photo-1742483359033-13315b247c74?w=900&q=80" alt="Technician steam cleaning a carpet with an extraction wand" loading="lazy"></div>
+      </article>
+      <article class="svc" data-tilt data-aos="fade-up" data-aos-delay="80">
+        <div class="ico"><i class="fa-solid fa-key"></i></div>
+        <h3>End of lease carpets</h3>
+        <p>An agent-ready receipt and our bond-back guarantee. Booked around your handover date.</p>
+        <a class="from" href="#bond">How it works →</a>
+      </article>
+      <article class="svc" data-tilt data-aos="fade-up" data-aos-delay="160">
+        <div class="ico"><i class="fa-solid fa-couch"></i></div>
+        <h3>Lounges &amp; upholstery</h3>
+        <p>Fabric-tested before we start. Lifts spills, sweat marks and that "lived in" smell.</p>
+        <a class="from" href="#prices">From $35 a seat →</a>
+      </article>
+      <article class="svc" data-tilt data-aos="fade-up" data-aos-delay="80">
+        <div class="ico"><i class="fa-solid fa-paw"></i></div>
+        <h3>Pet stains &amp; odour</h3>
+        <p>An enzyme treatment that breaks down urine at the backing, not just on top.</p>
+        <a class="from" href="#prices">+$20 a room →</a>
+      </article>
+      <article class="svc" data-tilt data-aos="fade-up" data-aos-delay="160">
+        <div class="ico"><i class="fa-solid fa-rug"></i></div>
+        <h3>Rugs &amp; stairs</h3>
+        <p>Rugs cleaned on site, and stair treads done edge to edge with a hand tool.</p>
+        <a class="from" href="#prices">From $49 a rug →</a>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- PRICES -->
+<section id="prices" class="sec">
+  <div class="wrap">
+    <div class="sec-head" data-aos="fade-up">
+      <span class="label">Prices</span>
+      <h2>Your price, before we knock.</h2>
+      <p>No "from $9 a room" surprises at the door. Pick a package or build your own below. The price you see is the price you pay.</p>
+    </div>
+    <div class="pkg-grid" id="pkgs"></div>
+
+    <div class="calc" data-aos="fade-up">
+      <div class="calc-in">
+        <h3>Build your own clean</h3>
+        <p>Tap a home size to start, then adjust anything.</p>
+        <div class="presets" id="presets" role="group" aria-label="Home size presets"></div>
+        <div class="rows" id="rows"></div>
+        <div class="extras">
+          <label class="check"><input type="checkbox" id="x-pet"> Pet odour treatment <small style="color:var(--muted)">(+$20 per area)</small></label>
+          <label class="check"><input type="checkbox" id="x-protect"> Stain protection <small style="color:var(--muted)">(+$15 per area)</small></label>
+          <label class="check"><input type="checkbox" id="x-lease"> It's an end of lease clean <small style="color:var(--muted)">(receipt + guarantee, free)</small></label>
+        </div>
+      </div>
+      <div class="calc-out" aria-live="polite">
+        <span class="lbl">Your fixed price</span>
+        <div class="total" id="total">$0</div>
+        <p class="note" id="note">Add a room to see your price.</p>
+        <ul id="lines"></ul>
+        <a class="btn btn-aqua" href="#contact" id="lock">Lock in this price <i class="fa-solid fa-arrow-right"></i></a>
+        <p class="fine">$119 minimum visit. Prices include GST. Rooms up to 20 m², larger rooms count as two.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROCESS -->
+<section id="process" class="sec">
+  <div class="wrap">
+    <div class="sec-head center" data-aos="fade-up">
+      <span class="label">How we work</span>
+      <h2 style="font-size:44px">Three steps, one morning.</h2>
+      <p>Most homes take 60 to 90 minutes. You can walk on the carpet in socks straight away.</p>
+    </div>
+    <div class="steps">
+      <div class="p-step" data-aos="fade-up"><div class="n">01</div><h3>Inspect &amp; pre-treat</h3><p>We test the fibre, point out any stains that might not shift, and pre-spray high traffic lanes so the dirt lets go.</p><span class="time">10 min</span></div>
+      <div class="p-step" data-aos="fade-up" data-aos-delay="120"><div class="n">02</div><h3>Hot water extraction</h3><p>Our truck-mounted unit pushes 90°C water deep into the pile, then pulls it straight back out with the dirt in it.</p><span class="time">40 to 60 min</span></div>
+      <div class="p-step" data-aos="fade-up" data-aos-delay="240"><div class="n">03</div><h3>Groom &amp; speed dry</h3><p>We rake the pile upright and set air movers running, so your carpet is dry in about two hours, not overnight.</p><span class="time">2 hr dry</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- BOND BACK -->
+<section id="bond" class="sec dark dots">
+  <div class="wrap bond">
+    <div class="bond-img" data-aos="fade-right">
+      <img src="https://images.unsplash.com/photo-1789352844477-7a8885ffeb17?w=1000&q=80" alt="Empty rental bedroom with clean carpet ready for final inspection" loading="lazy">
+      <div class="receipt" aria-hidden="true">
+        <b>Tidewell receipt #20481</b>
+        <div><span>3 bedrooms</span><span>$117</span></div>
+        <div><span>Living + hallway</span><span>$80</span></div>
+        <div><span>Method</span><span>Hot water extraction</span></div>
+        <div><span>Bond-back guarantee</span><span class="ok">Included</span></div>
+      </div>
+    </div>
+    <div>
+      <span class="label">Moving out?</span>
+      <h2 data-aos="fade-left">Carpets your agent signs off on, first time.</h2>
+      <p class="lead" data-aos="fade-left" data-aos-delay="100">Agents expect carpets back in the condition they were in when you moved in, less fair wear and tear. We clean them the way agents check for it.</p>
+      <ul class="ticks">
+        <li data-aos="fade-left" data-aos-delay="100"><span class="tick"><i class="fa-solid fa-check"></i></span>Hot water extraction, the method agents and landlords look for</li>
+        <li data-aos="fade-left" data-aos-delay="200"><span class="tick"><i class="fa-solid fa-check"></i></span>An itemised receipt emailed the same day, ready to forward</li>
+        <li data-aos="fade-left" data-aos-delay="300"><span class="tick"><i class="fa-solid fa-check"></i></span>Booked to suit your handover, including Saturdays</li>
+        <li data-aos="fade-left" data-aos-delay="400"><span class="tick"><i class="fa-solid fa-check"></i></span>We work alongside your general cleaner, no need to be home</li>
+      </ul>
+      <div class="promise" data-aos="fade-up"><b>Our bond-back guarantee:</b> if your agent flags the carpets at the final inspection, send us their note within 7 days and we'll come back and re-clean them free.</div>
+      <a class="btn btn-aqua" href="#prices" data-aos="fade-up">Price my end of lease clean <i class="fa-solid fa-arrow-right"></i></a>
+    </div>
+  </div>
+</section>
+
+<!-- GALLERY -->
+<section id="gallery" class="sec dark dots">
+  <div class="wrap">
+    <div class="sec-head center" data-aos="fade-up">
+      <span class="label">Recent jobs</span>
+      <h2>Fresh from this week.</h2>
+      <p>Homes, rentals and offices across the north and west.</p>
+    </div>
+    <div class="gal">
+      <figure class="gi" data-aos="fade-up" style="margin:0"><img src="https://images.unsplash.com/photo-1583847268964-b28dc8f51f92?w=1000&q=80" alt="Bright living room with clean light carpet" loading="lazy"><figcaption><span>Whole home</span><b>3 bedroom family home, Essendon</b></figcaption></figure>
+      <figure class="gi" data-aos="fade-up" data-aos-delay="100" style="margin:0"><img src="https://images.unsplash.com/photo-1686178827149-6d55c72d81df?w=800&q=80" alt="Technician cleaning a fabric ottoman" loading="lazy"><figcaption><span>Upholstery</span><b>Ottoman &amp; 3 seat lounge, Coburg</b></figcaption></figure>
+      <figure class="gi" data-aos="fade-up" data-aos-delay="200" style="margin:0"><img src="https://images.unsplash.com/photo-1600166898405-da9535204843?w=800&q=80" alt="Patterned rug rolled up after cleaning" loading="lazy"><figcaption><span>Rugs</span><b>Wool rug, Williamstown</b></figcaption></figure>
+      <figure class="gi" data-aos="fade-up" data-aos-delay="300" style="margin:0"><img src="https://images.unsplash.com/photo-1675756544970-968f9e3f7ca5?w=1100&q=80" alt="Modern open plan living room with clean rug" loading="lazy"><figcaption><span>End of lease</span><b>2 bedroom apartment, Footscray</b></figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<!-- WHY -->
+<section id="why" class="sec dark dots">
+  <div class="wrap why">
+    <div class="why-img" data-aos="fade-right">
+      <div class="ph"><img src="https://images.unsplash.com/photo-1504151864552-57020b6b876b?w=900&q=80" alt="Baby crawling on a clean carpet next to a fluffy dog" loading="lazy"></div>
+      <div class="g-badge" aria-label="Rated 4.9 on Google">
+        <svg viewBox="0 0 120 120" aria-hidden="true"><defs><path id="circ" d="M60,60 m-47,0 a47,47 0 1,1 94,0 a47,47 0 1,1 -94,0"/></defs><text font-size="9.5" font-weight="700" letter-spacing="3.2" fill="#0B2540"><textPath href="#circ">★ GOOGLE RATING ★ 860 REVIEWS ★ GOOGLE RATING</textPath></text></svg>
+        <div><b>4.9<i class="fa-solid fa-star"></i></b></div>
+      </div>
+    </div>
+    <div>
+      <span class="label">Why Tidewell</span>
+      <h2 data-aos="fade-left">Safe for crawlers, paws and wool.</h2>
+      <p class="bigline" data-aos="fade-left" data-aos-delay="100">12 years. 860 reviews. Same crew every visit.</p>
+      <ul class="ticks">
+        <li data-aos="fade-left" data-aos-delay="100"><span class="tick"><i class="fa-solid fa-check"></i></span>Low residue, child and pet safe solutions with nothing left in the pile to attract dirt</li>
+        <li data-aos="fade-left" data-aos-delay="200"><span class="tick"><i class="fa-solid fa-check"></i></span>Truck-mounted power, so we never use your hot water or power points</li>
+        <li data-aos="fade-left" data-aos-delay="300"><span class="tick"><i class="fa-solid fa-check"></i></span>Arrival window texted the night before, and a heads up 30 minutes out</li>
+        <li data-aos="fade-left" data-aos-delay="400"><span class="tick"><i class="fa-solid fa-check"></i></span>Furniture moved and put back on protective tabs at no charge</li>
+        <li data-aos="fade-left" data-aos-delay="500"><span class="tick"><i class="fa-solid fa-check"></i></span>Fully insured, police checked technicians in uniform</li>
+      </ul>
+      <a class="btn btn-aqua" href="#contact">Book a clean <i class="fa-solid fa-arrow-right"></i></a>
+    </div>
+  </div>
+</section>
+
+<!-- REVIEWS -->
+<section id="reviews" class="sec dark dots">
+  <div class="wrap">
+    <div class="sec-head center" data-aos="fade-up">
+      <span class="label">Reviews</span>
+      <h2>What the neighbours say.</h2>
+      <p>4.9 stars from 860 reviews across Melbourne's north and west.</p>
+    </div>
+  </div>
+  <div class="swiper t-swiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide"><div class="t-card"><span class="stars">★★★★★</span><q>Our cream lounge carpet had a track worn from the kitchen to the couch. It's gone. Sam showed me the bucket of water at the end and I genuinely felt sick. Dry by lunchtime.</q><hr><b>Priya N.</b><small><i class="fa-brands fa-google"></i> Google review · Moonee Ponds</small></div></div>
+      <div class="swiper-slide"><div class="t-card"><span class="stars">★★★★★</span><q>End of lease on a 2 bed in Footscray. I got the price online, booked for the Friday and the receipt was in my inbox before the van left. Full bond back, no questions from the agent.</q><hr><b>Josh T.</b><small><i class="fa-brands fa-google"></i> Google review · Footscray</small></div></div>
+      <div class="swiper-slide"><div class="t-card"><span class="stars">★★★★★</span><q>Two dogs and a toddler. I'd given up on the hallway. The pet odour treatment actually worked, and two weeks later the smell still hasn't come back.</q><hr><b>Hannah W.</b><small><i class="fa-brands fa-google"></i> Google review · Pascoe Vale</small></div></div>
+      <div class="swiper-slide"><div class="t-card"><span class="stars">★★★★★</span><q>We manage about 300 rentals and Tidewell is who we send tenants to. Receipts are always itemised, and on the rare re-clean they've been back within two days.</q><hr><b>Michael R.</b><small><i class="fa-brands fa-google"></i> Property manager · Sunshine</small></div></div>
+      <div class="swiper-slide"><div class="t-card"><span class="stars">★★★★★</span><q>Had the wool rug and a 3 seater done at the same time. They tested the fabric first and told me one ink mark might stay. It didn't. Honest and on time.</q><hr><b>Elena K.</b><small><i class="fa-brands fa-google"></i> Google review · Williamstown</small></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section id="faq" class="sec">
+  <div class="wrap faq">
+    <div>
+      <span class="label">FAQ</span>
+      <h2 style="font-size:52px;margin-top:18px">Good questions.</h2>
+      <p style="color:var(--muted)">Can't see yours? Text us on 0400 000 000 and a real person replies.</p>
+    </div>
+    <div>
+      <details open><summary>How long until I can walk on the carpet?</summary><p>Straight away in socks or bare feet. Carpets are usually fully dry in about two hours with our air movers and a window open. Wait until then before putting furniture back on bare carpet.</p></details>
+      <details><summary>Is the price really fixed?</summary><p>Yes. The calculator price is what you pay, as long as the rooms match what you booked. If a room is bigger than 20 m², we'll tell you before we start, never after.</p></details>
+      <details><summary>Will every stain come out?</summary><p>Most do. Some, like bleach marks, dye or old rust, change the fibre itself. We'll point those out during the inspection so there are no surprises.</p></details>
+      <details><summary>How does the bond-back guarantee work?</summary><p>If your agent flags the carpets at the final inspection, send us their note within 7 days and we'll come back and re-clean them free. It applies to every end of lease clean.</p></details>
+      <details><summary>Do I need to be home?</summary><p>Only to let us in, or you can leave a key in a lockbox. For end of lease cleans we often work alongside your general cleaner.</p></details>
+      <details><summary>What hours do you work?</summary><p>Monday to Saturday, 7am to 7pm. Sundays are available for end of lease cleans with a deadline.</p></details>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section id="cta" class="sec">
+  <div class="ghost" aria-hidden="true">FRESH</div>
+  <div class="wrap">
+    <span class="label" data-aos="fade-up" style="justify-content:center">Ready when you are</span>
+    <h2 data-aos="fade-up" data-aos-delay="80">Book this week, walk on clean carpet by lunch.</h2>
+    <p data-aos="fade-up" data-aos-delay="160">Fixed price. Two hour dry time. Re-clean free if your agent isn't happy.</p>
+    <a class="big-phone" href="tel:0400000000" data-aos="fade-up" data-aos-delay="240">0400 000 000</a><br>
+    <a class="btn btn-navy" href="#prices" data-aos="fade-up" data-aos-delay="320" style="font-size:18px;padding:16px 36px">Get my instant price <i class="fa-solid fa-arrow-right"></i></a>
+    <p class="reassure">Replies within 1 hour, 7am to 7pm · Fully insured · Serving Melbourne's north &amp; west since 2014</p>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="wrap contact">
+    <div>
+      <h2>Book or ask a question.</h2>
+      <h3>We'll confirm by text.</h3>
+      <p class="area">Covering Melbourne's north and west, from our base in Essendon.</p>
+      <a class="c-line phone" href="tel:0400000000"><i class="fa-solid fa-phone"></i>0400 000 000</a>
+      <a class="c-line" href="mailto:hello@tidewellcarpetcare.com.au"><i class="fa-solid fa-envelope"></i>hello@tidewellcarpetcare.com.au</a>
+      <div class="c-line"><i class="fa-solid fa-clock"></i>Mon to Sat, 7am to 7pm</div>
+      <div class="subs">Also serving:
+        <ul><li>Moonee Ponds</li><li>Brunswick</li><li>Coburg</li><li>Pascoe Vale</li><li>Footscray</li><li>Sunshine</li><li>Williamstown</li><li>Keilor</li><li>Point Cook</li><li>Werribee</li></ul>
+      </div>
+    </div>
+    <form class="qf" id="qf" novalidate>
+      <div class="two">
+        <div><label for="q-name">Full name</label><input id="q-name" name="name" autocomplete="name" required></div>
+        <div><label for="q-phone">Phone number</label><input id="q-phone" name="phone" type="tel" autocomplete="tel" required></div>
+      </div>
+      <div class="two">
+        <div><label for="q-svc">Service needed</label>
+          <select id="q-svc" name="service">
+            <option>Carpet steam cleaning</option><option>End of lease carpets</option><option>Lounges &amp; upholstery</option><option>Pet stains &amp; odour</option><option>Rugs &amp; stairs</option>
+          </select></div>
+        <div><label for="q-sub">Suburb</label><input id="q-sub" name="suburb" autocomplete="address-level2"></div>
+      </div>
+      <div><label for="q-msg">Anything else we should know? (optional)</label><textarea id="q-msg" name="message" placeholder="Preferred day, stairs, pets, parking..."></textarea></div>
+      <p class="err" id="q-err" role="alert"></p>
+      <button class="btn btn-aqua" type="submit">Send my request <i class="fa-solid fa-arrow-right"></i></button>
+    </form>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap f-grid">
+    <div>
+      <a class="brand" href="#hero"><span class="pulse-dot"></span>Tidewell <small>Carpet Care</small></a>
+      <p>Truck-mounted carpet and upholstery cleaning for Melbourne's north and west. Fixed prices, two hour dry.</p>
+      <div class="social"><a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a><a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a><a href="#" aria-label="Google reviews"><i class="fa-brands fa-google"></i></a></div>
+    </div>
+    <div><h4>Services</h4><ul><li><a href="#services">Carpet steam cleaning</a></li><li><a href="#bond">End of lease carpets</a></li><li><a href="#services">Lounges &amp; upholstery</a></li><li><a href="#services">Pet stains &amp; odour</a></li><li><a href="#services">Rugs &amp; stairs</a></li></ul></div>
+    <div><h4>Contact</h4><ul><li><a href="tel:0400000000"><i class="fa-solid fa-phone"></i> 0400 000 000</a></li><li><a href="mailto:hello@tidewellcarpetcare.com.au"><i class="fa-solid fa-envelope"></i> Email us</a></li><li><i class="fa-solid fa-location-dot"></i> Essendon, VIC</li><li><i class="fa-solid fa-clock"></i> Mon to Sat, 7am to 7pm</li></ul></div>
+    <div><h4>Quick links</h4><ul><li><a href="#prices">Prices</a></li><li><a href="#bond">Bond-back guarantee</a></li><li><a href="#reviews">Reviews</a></li><li><a href="#faq">FAQ</a></li><li><a href="#contact">Contact</a></li></ul></div>
+  </div>
+  <div class="f-bottom">© <span id="yr">2026</span> Tidewell Carpet Care. Fully insured.<br>Portfolio concept: a fictional business. Website design &amp; build by <a href="../../index.html">Keenan French</a>.</div>
+</footer>
+
+<a class="call-fab" href="tel:0400000000" aria-label="Call Tidewell"><i class="fa-solid fa-phone"></i></a>
+<div class="m-bar"><a class="c" href="tel:0400000000"><i class="fa-solid fa-phone"></i> Call</a><a class="q" href="#prices">Instant price <i class="fa-solid fa-arrow-right"></i></a></div>
+
+<script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+<script src="https://unpkg.com/splitting@1.0.6/dist/splitting.min.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11.1.14/swiper-bundle.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.1/vanilla-tilt.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/tsparticles@2.12.0/tsparticles.bundle.min.js"></script>
+<script>
+(() => {
+  const $ = (s, r = document) => r.querySelector(s);
+  const $$ = (s, r = document) => [...r.querySelectorAll(s)];
+  const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
+  $('#yr').textContent = new Date().getFullYear();
+
+  // ---- smooth scroll (Lenis first, RAF loop) ----
+  let lenis = null;
+  if (window.Lenis && !reduce) {
+    lenis = new Lenis({ lerp: 0.08 });
+    const raf = t => { lenis.raf(t); requestAnimationFrame(raf); };
+    requestAnimationFrame(raf);
+  }
+  const goTo = id => {
+    const el = document.getElementById(id); if (!el) return;
+    if (lenis) lenis.scrollTo(el, { offset: -60 }); else el.scrollIntoView({ behavior: reduce ? 'auto' : 'smooth' });
+  };
+  $$('a[href^="#"]').forEach(a => a.addEventListener('click', e => {
+    const id = a.getAttribute('href').slice(1); if (!id) return;
+    e.preventDefault(); closeMenu(); goTo(id);
+  }));
+
+  // ---- nav + progress ----
+  const nav = $('#nav'), prog = $('#scroll-progress');
+  const onScroll = () => {
+    const y = scrollY;
+    nav.classList.toggle('solid', y > 80);
+    prog.style.width = (y / (document.body.scrollHeight - innerHeight) * 100) + '%';
+  };
+  addEventListener('scroll', onScroll, { passive: true }); onScroll();
+  const burger = $('#burger'), links = $('#nav-links');
+  function closeMenu() { links.classList.remove('open'); burger.classList.remove('open'); burger.setAttribute('aria-expanded', 'false'); document.body.style.overflow = ''; }
+  burger.addEventListener('click', () => {
+    const open = !links.classList.contains('open');
+    links.classList.toggle('open', open); burger.classList.toggle('open', open);
+    burger.setAttribute('aria-expanded', String(open)); document.body.style.overflow = open ? 'hidden' : '';
+  });
+
+  // ---- hero entrance ----
+  if (window.Splitting) Splitting();
+  if (window.gsap && !reduce) {
+    gsap.from('.hero-label', { opacity: 0, y: 12, duration: .6 });
+    gsap.from('.hero-headline .word', { y: 40, opacity: 0, duration: .8, stagger: .08, ease: 'power3.out', delay: .1 });
+    gsap.from('.hero-sub', { opacity: 0, y: 20, duration: .7, delay: .5 });
+    gsap.from('.hero-ctas, .hero-trust', { opacity: 0, y: 16, duration: .7, delay: .7, stagger: .1 });
+    gsap.from('.ba', { opacity: 0, x: 60, duration: 1, delay: .5, ease: 'power3.out' });
+    gsap.from('.hero-cert-badge', { opacity: 0, y: -10, duration: .6, delay: 1.2 });
+    gsap.from('.hero-stat', { opacity: 0, y: 20, duration: .6, delay: 1.5 });
+  }
+
+  // ---- before / after slider ----
+  const ba = $('#ba'), range = $('input', ba);
+  const setPos = v => ba.style.setProperty('--pos', v + '%');
+  range.addEventListener('input', () => { setPos(range.value); touched = true; });
+  let touched = false;
+  if (!reduce) { // one gentle sweep to show it's interactive
+    const o = { v: 50 };
+    window.gsap && gsap.timeline({ delay: 1.8 }).to(o, { v: 78, duration: 1.1, ease: 'power2.inOut', onUpdate: () => !touched && (setPos(o.v), range.value = o.v) })
+      .to(o, { v: 32, duration: 1.3, ease: 'power2.inOut', onUpdate: () => !touched && (setPos(o.v), range.value = o.v) })
+      .to(o, { v: 50, duration: .9, ease: 'power2.inOut', onUpdate: () => !touched && (setPos(o.v), range.value = o.v) });
+  }
+
+  // ---- particles (soap bubbles) ----
+  if (window.tsParticles && !reduce) {
+    tsParticles.load('particles', {
+      fullScreen: { enable: false },
+      particles: {
+        number: { value: 28 }, color: { value: ['#ffffff', '#19B3C2'] },
+        opacity: { value: { min: .05, max: .22 }, animation: { enable: true, speed: .6, sync: false } },
+        size: { value: { min: 1, max: 4 } },
+        stroke: { width: 0 },
+        move: { enable: true, speed: .5, direction: 'top', random: true, straight: false, outModes: 'out' },
+        shape: { type: 'circle' }
+      },
+      detectRetina: true
+    });
+  }
+
+  // ---- counters ----
+  const io = new IntersectionObserver(es => es.forEach(e => {
+    if (!e.isIntersecting) return; io.unobserve(e.target);
+    const el = e.target, to = +el.dataset.to, dec = +(el.dataset.dec || 0);
+    if (!window.gsap || reduce) { el.textContent = to.toFixed(dec); return; }
+    const o = { v: 0 };
+    gsap.to(o, { v: to, duration: 2, ease: 'expo.out', onUpdate: () => el.textContent = o.v.toFixed(dec) });
+  }), { threshold: .5 });
+  $$('.count').forEach(c => io.observe(c));
+
+  // ---- pricing ----
+  const ITEMS = [
+    { k: 'bed', name: 'Bedrooms', sub: '$39 each', price: 39, area: true },
+    { k: 'living', name: 'Living / dining areas', sub: '$55 each', price: 55, area: true },
+    { k: 'hall', name: 'Hallways', sub: '$25 each', price: 25, area: true },
+    { k: 'stairs', name: 'Staircases', sub: '$59 a flight', price: 59, area: true },
+    { k: 'rug', name: 'Rugs', sub: '$49 each', price: 49 },
+    { k: 'seat', name: 'Lounge seats', sub: '$35 a seat', price: 35 },
+  ];
+  const PRESETS = [
+    { name: 'Unit refresh', label: '1 bed unit', who: 'Apartments and townhouses', q: { bed: 1, living: 1, hall: 1 }, feats: ['1 bedroom, living area, hallway', 'Pre-spray on traffic lanes', 'Dry in about 2 hours'] },
+    { name: 'Family home', label: '3 bed house', who: 'The one most people book', q: { bed: 3, living: 1, hall: 1 }, hot: true, feats: ['3 bedrooms, living area, hallway', 'Furniture moved and replaced', 'Spot treatment on stubborn marks', 'Dry in about 2 hours'] },
+    { name: 'Big home', label: '4 bed house', who: 'Larger homes with stairs', q: { bed: 4, living: 2, hall: 1, stairs: 1 }, feats: ['4 bedrooms, 2 living areas', 'Hallway and one staircase', 'Furniture moved and replaced'] },
+  ];
+  const MIN = 119;
+  const q = Object.fromEntries(ITEMS.map(i => [i.k, 0]));
+  const fmt = n => '$' + n.toLocaleString('en-AU');
+  const priceOf = (qq, pet = false, protect = false) => {
+    let sum = 0, areas = 0;
+    ITEMS.forEach(i => { const n = qq[i.k] || 0; sum += n * i.price; if (i.area) areas += n; });
+    if (pet) sum += areas * 20; if (protect) sum += areas * 15;
+    return { sum, areas, total: sum ? Math.max(sum, MIN) : 0 };
+  };
+
+  $('#pkgs').innerHTML = PRESETS.map((p, idx) => `
+    <article class="pkg${p.hot ? ' hot' : ''}" data-aos="fade-up" data-aos-delay="${idx * 80}">
+      ${p.hot ? '<span class="pop">Most booked</span>' : ''}
+      <h3>${p.name}</h3><p class="who">${p.who}</p>
+      <div class="price">${fmt(priceOf(p.q).total)}<small>fixed</small></div>
+      <ul>${p.feats.map(f => `<li><i class="fa-solid fa-check"></i>${f}</li>`).join('')}</ul>
+      <button class="btn ${p.hot ? 'btn-aqua' : 'btn-navy'}" data-preset="${idx}">Choose ${p.name.toLowerCase()} <i class="fa-solid fa-arrow-right"></i></button>
+    </article>`).join('');
+
+  $('#presets').innerHTML = PRESETS.map((p, i) => `<button type="button" data-preset="${i}">${p.label}</button>`).join('');
+  $('#rows').innerHTML = ITEMS.map(i => `
+    <div class="row"><div><b>${i.name}</b><small>${i.sub}</small></div>
+      <div class="step"><button type="button" data-k="${i.k}" data-d="-1" aria-label="Remove one ${i.name.toLowerCase()}">−</button><output id="o-${i.k}" aria-label="${i.name}">0</output><button type="button" data-k="${i.k}" data-d="1" aria-label="Add one ${i.name.toLowerCase()}">+</button></div></div>`).join('');
+
+  const pet = $('#x-pet'), protect = $('#x-protect'), lease = $('#x-lease');
+  const totalEl = $('#total');
+  let shown = 0;
+  function render() {
+    ITEMS.forEach(i => $('#o-' + i.k).textContent = q[i.k]);
+    const r = priceOf(q, pet.checked, protect.checked);
+    const lines = ITEMS.filter(i => q[i.k]).map(i => `<li><span>${q[i.k]} × ${i.name.toLowerCase()}</span><span>${fmt(q[i.k] * i.price)}</span></li>`);
+    if (pet.checked && r.areas) lines.push(`<li><span>Pet odour × ${r.areas}</span><span>${fmt(r.areas * 20)}</span></li>`);
+    if (protect.checked && r.areas) lines.push(`<li><span>Stain protection × ${r.areas}</span><span>${fmt(r.areas * 15)}</span></li>`);
+    if (lease.checked && r.sum) lines.push(`<li><span>Receipt + bond-back guarantee</span><span>Free</span></li>`);
+    $('#lines').innerHTML = lines.join('');
+    $('#note').textContent = !r.sum ? 'Add a room to see your price.' : r.sum < MIN ? `Your items come to ${fmt(r.sum)}, so the $119 minimum visit applies.` : 'Fixed price, GST included. No call-out fee.';
+    if (window.gsap && !reduce) { const o = { v: shown }; gsap.to(o, { v: r.total, duration: .5, ease: 'power2.out', onUpdate: () => totalEl.textContent = fmt(Math.round(o.v)) }); }
+    else totalEl.textContent = fmt(r.total);
+    shown = r.total;
+  }
+  function applyPreset(idx) {
+    ITEMS.forEach(i => q[i.k] = PRESETS[idx].q[i.k] || 0);
+    $$('#presets button').forEach((b, i) => b.classList.toggle('on', i === +idx));
+    render();
+  }
+  document.addEventListener('click', e => {
+    const s = e.target.closest('[data-k]');
+    if (s) { q[s.dataset.k] = Math.min(12, Math.max(0, q[s.dataset.k] + +s.dataset.d)); $$('#presets button').forEach(b => b.classList.remove('on')); render(); }
+    const p = e.target.closest('[data-preset]');
+    if (p) { applyPreset(p.dataset.preset); if (p.closest('.pkg')) goTo('presets'); }
+  });
+  [pet, protect, lease].forEach(c => c.addEventListener('change', render));
+  applyPreset(1);
+
+  // lock in → prefill form
+  $('#lock').addEventListener('click', () => {
+    const r = priceOf(q, pet.checked, protect.checked); if (!r.total) return;
+    const parts = ITEMS.filter(i => q[i.k]).map(i => `${q[i.k]} ${i.name.toLowerCase()}`);
+    if (pet.checked) parts.push('pet odour treatment'); if (protect.checked) parts.push('stain protection');
+    $('#q-msg').value = `Online price ${fmt(r.total)}: ${parts.join(', ')}.`;
+    $('#q-svc').value = lease.checked ? 'End of lease carpets' : 'Carpet steam cleaning';
+  });
+
+  // ---- reviews ----
+  if (window.Swiper) new Swiper('.t-swiper', {
+    loop: true, spaceBetween: 24, grabCursor: true, centeredSlides: true,
+    autoplay: reduce ? false : { delay: 3500, disableOnInteraction: false, pauseOnMouseEnter: true },
+    breakpoints: { 0: { slidesPerView: 1.15, centeredSlides: true }, 768: { slidesPerView: 2.2, centeredSlides: false }, 1024: { slidesPerView: 3, centeredSlides: false } }
+  });
+
+  // ---- tilt ----
+  if (window.VanillaTilt && matchMedia('(hover:hover)').matches && !reduce)
+    VanillaTilt.init($$('[data-tilt]'), { max: 6, speed: 400, glare: true, 'max-glare': .15, perspective: 800 });
+
+  // ---- form (portfolio demo: nothing is sent) ----
+  const form = $('#qf');
+  form.addEventListener('submit', e => {
+    e.preventDefault();
+    const name = $('#q-name').value.trim(), phone = $('#q-phone').value.trim();
+    if (!name || phone.replace(/\D/g, '').length < 8) { $('#q-err').textContent = 'Please add your name and a phone number we can text.'; return; }
+    form.innerHTML = `<div class="sent"><i class="fa-solid fa-circle-check"></i><p>Thanks ${name.split(' ')[0].replace(/[<>&"]/g, '')}, request received.</p><small>This is a portfolio demo, so nothing was actually sent. On a live site this lands in the owner's CRM and pings their phone.</small></div>`;
+  });
+
+  if (window.AOS) AOS.init({ duration: 700, once: true, offset: 80, disable: reduce });
+})();
+</script>
+</body>
+</html>
