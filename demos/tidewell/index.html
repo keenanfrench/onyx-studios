@@ -720,7 +720,6 @@ footer{background:var(--navy);color:#fff;border-top:3px solid var(--aqua);paddin
 <a class="call-fab" href="tel:0400000000" aria-label="Call Tidewell"><i class="fa-solid fa-phone"></i></a>
 <div class="m-bar"><a class="c" href="tel:0400000000"><i class="fa-solid fa-phone"></i> Call</a><a class="q" href="#prices">Instant price <i class="fa-solid fa-arrow-right"></i></a></div>
 
-<script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
 <script src="https://unpkg.com/splitting@1.0.6/dist/splitting.min.js"></script>
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
@@ -734,16 +733,10 @@ footer{background:var(--navy);color:#fff;border-top:3px solid var(--aqua);paddin
   const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
   $('#yr').textContent = new Date().getFullYear();
 
-  // ---- smooth scroll (Lenis first, RAF loop) ----
-  let lenis = null;
-  if (window.Lenis && !reduce) {
-    lenis = new Lenis({ lerp: 0.08 });
-    const raf = t => { lenis.raf(t); requestAnimationFrame(raf); };
-    requestAnimationFrame(raf);
-  }
+  // ---- anchor links: native scroll, offset for the sticky header ----
   const goTo = id => {
     const el = document.getElementById(id); if (!el) return;
-    if (lenis) lenis.scrollTo(el, { offset: -60 }); else el.scrollIntoView({ behavior: reduce ? 'auto' : 'smooth' });
+    window.scrollTo({ top: el.getBoundingClientRect().top + scrollY - 60, behavior: reduce ? 'auto' : 'smooth' });
   };
   $$('a[href^="#"]').forEach(a => a.addEventListener('click', e => {
     const id = a.getAttribute('href').slice(1); if (!id) return;
