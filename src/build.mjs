@@ -8,11 +8,11 @@ const SITE = 'https://keenanfrench.github.io/project-x-site/';
 const EMAIL = 'keenanfrench13@gmail.com';
 
 const PLANS = [
-  { key: 'launch', name: 'Launch', for: 'For new businesses that need to look legit, fast.', setup: 1000, monthly: 199, shot: 'bellmont', eg: 'bellmont',
+  { key: 'launch', name: 'Launch', for: 'For new businesses that need to look legit, fast.', setup: 1500, monthly: 199, shot: 'bellmont', eg: 'bellmont',
     features: ['One-page, conversion-focused website', 'Mobile-first design & copywriting', 'Hosting, SSL, backups & security', 'Enquiry form → CRM with instant phone alerts', 'On-page SEO setup', '1 website edit per month'] },
-  { key: 'business', name: 'Business', for: 'For established businesses ready to grow.', setup: 2500, monthly: 300, shot: 'island-braider', eg: 'island-braider', featured: true,
+  { key: 'business', name: 'Business', for: 'For established businesses ready to grow.', setup: 3000, monthly: 299, shot: 'island-braider', eg: 'island-braider', featured: true,
     features: ['+Everything in Launch, plus:', 'Up to 6 pages', 'Online booking or scheduling built in', 'Google Business Profile setup & optimisation', 'Ongoing SEO tweaks', '3 website edits per month'] },
-  { key: 'signature', name: 'Signature', for: 'For brands that want to be the one people remember.', setup: 5000, monthly: 600, shot: 'maplewood', eg: 'maplewood',
+  { key: 'signature', name: 'Signature', for: 'For brands that want to be the one people remember.', setup: 5000, monthly: 599, shot: 'maplewood', eg: 'maplewood',
     features: ['+Everything in Business, plus:', 'Fully custom multi-page site', 'Signature animation or interactive 3D', 'A new page or section every quarter', 'Priority, same-day support', '5 website edits per month'] },
 ];
 
