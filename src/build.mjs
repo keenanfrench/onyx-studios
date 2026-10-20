@@ -112,6 +112,20 @@ const PROJECTS = [
     fonts: [['Headings', 'Plus Jakarta Sans'], ['Body', 'Inter']],
     shots: ['s1', 's2'],
   },
+  {
+    slug: 'halden', name: 'Halden Pest Control', kind: 'Pest control', tag: 'Concept', year: '2026', plan: 'Launch',
+    url: 'https://onyxstudios.com.au/demos/halden/', host: 'onyxstudios.com.au/demos/halden',
+    summary: 'A bold, fast one-page site for a pest controller that helps worried homeowners work out what they’ve got and call about it.',
+    brief: 'People search for pest control when something is already wrong: scratching in the roof, ants in the kitchen, mud tunnels on a stump. Most local pest sites answer with a wall of service names and a phone number. Visitors need to know what they’re dealing with, whether it’s serious, and who to call, in under a minute on their phone.',
+    approach: 'Near-black and hazard amber with a wide, heavy headline face, so it reads as confident and urgent without looking cheap. The page leads with the problem, not the company: a “What are you seeing?” picker sits right in the hero, the phone number is always one tap away, and every claim is backed by a plain explanation of what actually gets done.',
+    signature: 'An interactive pest guide. Tap ants, spiders, rats, termites and more to see the signs to look for, why it matters and how it’s treated, then one tap carries that pest straight into the quote form. The whole site is a template that re-colours itself from any brand colour and keeps the text readable automatically.',
+    built: ['Conversion-focused one-page site', 'Interactive pest guide', 'Quote form pre-filled from the guide', 'Automatic brand-colour theming', 'Service areas & FAQ', 'Sticky call and quote bar on mobile'],
+    stack: 'HTML, CSS, JavaScript',
+    palette: [['Ink', '#121417'], ['Amber', '#F2B705'], ['Paper', '#F5F3EE'], ['Graphite', '#1B1E23'], ['Stone', '#DAD6CD']],
+    fonts: [['Headings', 'Archivo Expanded'], ['Body', 'Public Sans']],
+    shots: ['s1', 's2'],
+    note: 'Concept project: Halden Pest Control is a fictional business created to show what a Launch build looks like.',
+  },
 ];
 
 const fmt = n => '$' + n.toLocaleString('en-AU');
@@ -374,7 +388,7 @@ PROJECTS.forEach((p, i) => {
 </section>
 
 <section class="wrap" style="padding-bottom:40px">
-  <div class="browser reveal"><div class="bar"><i></i><i></i><i></i><em>keenanfrench.github.io/${p.host}</em></div><img src="../assets/work/${p.slug}-hero.jpg" alt="${esc(p.name)} homepage" width="1440" height="900"></div>
+  <div class="browser reveal"><div class="bar"><i></i><i></i><i></i><em>${p.host.includes('.') ? p.host : 'keenanfrench.github.io/' + p.host}</em></div><img src="../assets/work/${p.slug}-hero.jpg" alt="${esc(p.name)} homepage" width="1440" height="900"></div>
 </section>
 
 <div class="wrap">
