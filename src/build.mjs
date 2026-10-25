@@ -443,7 +443,7 @@ const terms = page({
       <tr><th>Plan</th><th>Setup (one-off)</th><th>Monthly</th><th>Edits / month</th><th>Buyout</th></tr>
       ${PLANS.map((pl, i) => `<tr><td>${pl.name}</td><td>${fmt(pl.setup)}</td><td>${fmt(pl.monthly)}</td><td>${[1, 3, 5][i]}</td><td>${fmt(pl.monthly * 6)}</td></tr>`).join('\n      ')}
     </table>
-    <p>All prices are in Australian dollars. The setup fee is invoiced when your project starts. Monthly fees are billed in advance from the date your site goes live.</p>
+    <p>All prices are in Australian dollars. You pay by card through our payment provider, Whop: your first plan payment (plus any setup fee) when you sign up, then your plan fee automatically every 30 days, in advance. You can cancel within 10 business days of signing up for a full refund.</p>
 
     <h2>What every plan includes</h2>
     <ul>
@@ -454,7 +454,7 @@ const terms = page({
     </ul>
 
     <h2>Minimum term</h2>
-    <p>Every plan has a <strong>12-month minimum term</strong>, starting on your launch date. After 12 months your plan continues month-to-month and can be cancelled with 30 days’ written notice. Different terms can be negotiated and will be written into your agreement.</p>
+    <p>Every plan has a <strong>12-month minimum term</strong>, starting on your first payment. After 12 months your plan continues month-to-month and can be cancelled with 30 days’ written notice. Different terms can be negotiated and will be written into your agreement.</p>
 
     <h2>Edits</h2>
     <p>An edit is a small change of up to about 30 minutes of work, such as updating text, prices, opening hours or photos. Unused edits don’t roll over to the next month. Larger work (new pages, new features, redesigns) is quoted separately, except where your plan includes it.</p>
